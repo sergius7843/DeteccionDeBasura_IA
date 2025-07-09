@@ -1,0 +1,33 @@
+# Ignorar el entorno virtual
+venv/
+
+# Ignorar el directorio del dataset que es muy pesado
+datosPasados/
+runs/
+test/
+train/
+valid/
+
+
+# Ignorar resultados de entrenamiento y pesos de modelos
+# La carpeta 'runs' contiene muchos logs y archivos intermedios del entrenamiento
+runs/
+
+# Ignorar la carpeta de cache de Python
+__pycache__/
+
+# Ignorar modelos entrenados grandes, excepto 'last110.pt'
+# Queremos subir 'last110.pt', así que no lo incluimos aquí.
+best.pt
+yolo11n.pt
+yolov8m.pt
+yolov8x.pt
+
+# Ignorar archivos .rar (normalmente no se suben a Git)
+*.rar
+
+# Ignorar archivos de sistema específicos de macOS si trabajas con Mac
+.DS_Store
+
+# Ignorar archivos generados por el sistema operativo Windows
+Thumbs.db
